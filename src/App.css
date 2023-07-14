@@ -1,0 +1,61 @@
+
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
+
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+th,td{
+    padding: .75rem;
+    font-weight: 500;
+    color: #fffffe
+}
+.recoverBtn{
+    opacity: 0;
+    visibility: hidden;
+    transition: all .2s ease-out;
+}
+.trashRow:hover .recoverBtn{
+    opacity: 1;
+    visibility: visible
+
+}
+.swiper{
+	height: 90vh;
+}
+.swiper-pagination {
+	position: absolute;
+	bottom: 0 !important;
+	left: 50%;
+
+	padding-top: 2rem !important;
+	
+}
+.swiper-pagination-bullet {
+	width: 1.5rem !important;
+	height: 1.5rem !important;
+    display: grid;
+    place-items: center;
+	border-radius: 99% !important;
+	opacity: 1 !important;
+	background: #14ae9c !important;
+	transition: all .3s;
+	margin: 0 .5rem !important;
+
+}
+.swiper-pagination-bullet-active {
+	background: #1ddbc5 !important;
+	transform: translateY(-10px) scale(1.1);
+} 
+
+
+
+/* npx tailwindcss -i ./src/App.css -o ./css/output.css --watch */
+
